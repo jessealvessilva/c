@@ -5,6 +5,7 @@ int main() {
 	
 	// Declaração
 	int vetor[5]; 	
+	int i;
 	
 	// Atribuição de valor
 	vetor[0]  =  10;
@@ -13,15 +14,10 @@ int main() {
 	vetor [3] =  35;
 	vetor [4] =  2;
     
-    printf("\n\nValue of the position is 0 equal is %d ", vetor[0] );
-    
-    printf("\nValue of the position is 1 equal is %d ", vetor[1] );
-    
- 	printf("\nValue of the position is 2 equal is %d ", vetor[2] );    
- 	
- 	printf("\nValue of the position is 3 equal is %d ", vetor[3] );    
- 	
- 	printf("\nValue of the position is 4 equal is %d ", vetor[4] );    
+	for( i = 0; i <= 5; i++){ 
+	
+		 printf("\n\nValue of the position is %d equal is %d ", i, vetor[i] * 2 );	  
+	} 
 	
 	printf("\n\n\n\n");
 	return 0;
