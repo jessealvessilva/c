@@ -4,21 +4,27 @@
 int main() {
 	
 	// Declaração
-	int vetor[5]; 	
+	int Mark[5]; 	 
 	int i;
 	
 	// Atribuição de valor
-	vetor[0]  =  10;
-	vetor[1]  =  55;
-	vetor [2] =  200;
-	vetor [3] =  35;
-	vetor [4] =  2;
+	Mark[0]  =  10;
+	Mark[1]  =  5;
+	Mark[2]  =  8;
+	Mark[3]  =  3;
+	Mark[4]  =  6;
     
-	for( i = 0; i <= 5; i++){ 
+	for( i = 0; i < 5; i++){ 
 	
-		 printf("\n\nValue of the position is %d equal is %d ", i, vetor[i] * 2 );	  
+		if( Mark[i] >= 7 ) {
+		
+			printf("\n\nO aluno %d tirou %d e esta Aprovado", i, Mark[i] );
+		
+		}else{
+			printf("\n\nO aluno %d tirou %d e esta Reprovado", i, Mark[i] );
+		}
 	} 
 	
 	printf("\n\n\n\n");
 	return 0;
-}
+} 
